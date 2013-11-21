@@ -1,0 +1,11 @@
+{
+  "name": "x10_mochad_driver",
+  "version": "0.0.0",
+  "description": "X10-Mochad driver",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Federico",
+  "license": "MIT"
+}
