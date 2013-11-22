@@ -72,9 +72,10 @@ I have not incorporated status information because it is unreliable. mochad prov
 To do:
 ------
 
-Add dimmable devices
-The sensor code could be extended to listen to events such as knowing when a light is turned on? Any interest in this?
-Add a friendly name when adding a device so that it is shown on the widget
+* Add dimmable devices
+* The sensor code could be extended to listen to events such as knowing when a light is turned on? Any interest in this?
+* Add a friendly name when adding a device so that it is shown on the widget
+* Add a custom widget for the sensors (similar to the RF 433 widget?)
 
 I will not incorporate security devices since I do not own any and cannot perform testing.
 
