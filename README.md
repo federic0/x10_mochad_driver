@@ -51,7 +51,7 @@ X10 PIR sensors can be used in new ways, they normally control a single device a
 Limitations:
 ------------
 
-I have not incorporated status information because it is unreliable. mochad provides status information based on codes the server has "seen". However, some devices may be actuated on from manual switches which mochad cannot monitor, resulting in inaccurate status reports.
+I have not incorporated status information because it is unreliable. mochad provides status information based on command the server has "seen". However, some devices may be actuated on from manual switches which mochad cannot monitor, resulting in inaccurate status reports.
 
 To do:
 ------
