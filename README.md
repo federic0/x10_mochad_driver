@@ -30,7 +30,7 @@ Installation
 ```
 ssh ubuntu@ninjablock.local
 ```
-the password should be temppwd
+the password should be *temppwd*
 
 ```
 cd /opt/ninja/drivers
