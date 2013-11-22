@@ -24,6 +24,21 @@ widget code for ON/OFF devices is provided.
 
 Sensors can be used to trigger rules using the developer mode generic rule components, by using the change trigger and setting the **"change"** widget field to *ON* or *OFF*.
 
+Installation
+------------
+
+```
+cd PATH_TO_NINJA_CLIENT/drivers
+git clone https://github.com/federic0/x10_mochad_driver.git
+cd x10_mochad_driver
+npm install
+sudo service ninjablock restart
+```
+
+You then go to the *settings* tab on your dashboard and click on *configure* from the *block* tab. click on *X10 Mochad Driver* and click on *configure IP & Port*, fill in the fields with the IP address of the mochad server and the port it listens to (default is 1099), **save**. Click once again *configure* and *X10 Mochad Driver*, then click *Configure X10 Device*, select the *device type* and its *house unit* (i.e. A1). Repeat for as many devices as needed. Two devices can have the same house unit code if one is a sensor and the other an ON/OFF module.
+
+Then, on the beta dashboard you will need to go to the widget menu of your device (cog menu) and replace the HTML CSS and JS code with the code found in ```https://gist.github.com/federic0/7596393```. Replace HTML code with view.html, CSS code with style.less and JS with widget.js.
+
 Benefits:
 ---------
 
