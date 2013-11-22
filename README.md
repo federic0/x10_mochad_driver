@@ -51,7 +51,7 @@ Sensors can be used to trigger rules using the developer mode generic rule compo
 
 ![Widgets](https://dl-web.dropbox.com/get/shared/trigger%20rule%20based%20on%20x10%20sensor.png?w=AABNvHf3kSK4lm0IbOofrnoDzvm_yvUZfckMvzN5yT7ykw)
 
-In order to actuate on an X10 device when a rule is triggered, use the **Send Value** widget, select the desired X10 device and fill the "Value" field with either **"on"** or **"off"**:
+In order to actuate on an X10 device when a rule is triggered, use the **Send Value** widget, select the desired X10 device and fill the "Value" field with either *on* or *off*:
 
 ![Widgets](https://dl-web.dropbox.com/get/shared/actuate%20on%20X10%20in%20rules.png?w=AAANW5z88vuN2hX5p14e7d98z6DymgspbjBQQWF-W3XbbQ)
 
