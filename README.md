@@ -3,7 +3,8 @@ X10 Driver for Ninjablocks
 
 this is an X10 driver for Ninja Blocks that works through mochad, a server that can receive TCP (netcat) commands and relay them to X10 via the powerline and RF, it requires a CM15A or a CM19A controller. First of all, apologies as this is my first code ever in javascript. It's completely beta. 
 
-![Widgets](https://www.dropbox.com/s/o3cuo7hh3ja460u/X10%20widget.png)
+![Widgets](https://dl-web.dropbox.com/get/shared/X10%20widget.png?w=AABhY8-r37OYOBSk-nzbmPE3qltnN4eh0qySiX0K2kXomQ)
+
 ![Widgets](https://www.dropbox.com/s/ro8pr43qpsfoqiq/x10%20sensor.png)
 
 Requirements:
