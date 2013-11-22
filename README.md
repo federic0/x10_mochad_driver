@@ -5,7 +5,7 @@ this is an X10 driver for Ninja Blocks that works through mochad, a server that 
 
 ![Widgets](https://dl-web.dropbox.com/get/shared/X10%20widget.png?w=AABhY8-r37OYOBSk-nzbmPE3qltnN4eh0qySiX0K2kXomQ)
 
-![Widgets](https://www.dropbox.com/s/ro8pr43qpsfoqiq/x10%20sensor.png)
+![Widgets](https://dl-web.dropbox.com/get/shared/x10%20sensor.png?w=AACBiBPTShQufwxwbOK_fA-DIj9fZF6w744GbCO5bMh1vw)
 
 Requirements:
 -------------
@@ -26,7 +26,6 @@ Configuration of the driver consists of specifying the IP address and port of th
 
 widget code for ON/OFF devices is provided.
 
-Sensors can be used to trigger rules using the developer mode generic rule components, by using the change trigger and setting the **"change"** widget field to *ON* or *OFF*.
 
 Installation
 ------------
@@ -47,6 +46,15 @@ sudo service ninjablock restart
 You then go to the *settings* tab on your dashboard and click on *configure* from the *block* tab. click on *X10 Mochad Driver* and click on *configure IP & Port*, fill in the fields with the IP address of the mochad server and the port it listens to (default is 1099), **save**. Click once again *configure* and *X10 Mochad Driver*, then click *Configure X10 Device*, select the *device type* and its *house unit* (i.e. A1). Repeat for as many devices as needed. Two devices can have the same house unit code if one is a sensor and the other an ON/OFF module.
 
 Then, on the beta dashboard you will need to go to the widget menu of your device (cog menu) and replace the HTML CSS and JS code with the code found in ```https://gist.github.com/federic0/7596393```. Replace HTML code with view.html, CSS code with style.less and JS with widget.js.
+ 
+Sensors can be used to trigger rules using the developer mode generic rule components, by using the **Change** trigger and setting the **Change** widget field to *ON* or *OFF* for the desired sensor:
+
+![Widgets](https://dl-web.dropbox.com/get/shared/trigger%20rule%20based%20on%20x10%20sensor.png?w=AABNvHf3kSK4lm0IbOofrnoDzvm_yvUZfckMvzN5yT7ykw)
+
+In order to actuate on an X10 device when a rule is triggered, use the **Send Value** widget, select the desired X10 device and fill the "Value" field with either **"on"** or **"off"**:
+
+![Widgets](https://dl-web.dropbox.com/get/shared/actuate%20on%20X10%20in%20rules.png?w=AAANW5z88vuN2hX5p14e7d98z6DymgspbjBQQWF-W3XbbQ)
+
 
 Benefits:
 ---------
