@@ -62,7 +62,7 @@ var X10_ANNOUNCEMENT = {
       this.registerAll(mochad);
     }
   }.bind(this));
-};
+
 
 /**
  * Called when a user prompts a configuration.
@@ -112,7 +112,7 @@ x10Driver.prototype.setX10 = function(houseUnit, deviceType) {
   };
   this._opts.x10Devices.push(newDevice);
   this.save();
-  this.registerDevice(newDevice);
+  this.registerDevice(newDevice, mochad);
 };
 
 x10Driver.prototype.setIpPort = function(ipAddress, port) {
@@ -124,24 +124,28 @@ x10Driver.prototype.setIpPort = function(ipAddress, port) {
 
 
 x10Driver.prototype.registerDevice = function (x10Device, mochad) {
-  var device;
-  var key = x10Device.houseUnit + x10Device.type;
-  if (key in this.registeredDevices){
-    device = this.registeredDevices[key];
-  } else {
-    device = new X10Device(this, x10Device, mochad);
-  }
-  this.save();
-  this.emit('register', device, mochad)
-}
-
-x10Driver.prototype.registerAll = function (mochad) {
-  var devices = this._opts.x10Devices;
-  for ( var i = 0; i < devices.length; i++){
-    this.registerDevice(devices[i], mochad);
+  if (typeof(x10Device) !== 'undefined'){
+    var device;
+    var key = x10Device.houseUnit + x10Device.type;
+    if (key in this.registeredDevices){
+      device = this.registeredDevices[key];
+    } else {
+      device = new X10Device(this, x10Device, mochad);
+    }
+    this.save();
+    this.emit('register', device, mochad)
   }
 };
 
+x10Driver.prototype.registerAll = function (mochad) {
+  if (typeof(this._opts.x10Devices) !== 'undefined'){
+    var devices = this._opts.x10Devices;
+    for ( var i = 0; i < devices.length; i++){
+      this.registerDevice(devices[i], mochad);
+    }
+  }
+};
+};
 
 
 // Export it
