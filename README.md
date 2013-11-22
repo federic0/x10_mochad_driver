@@ -28,8 +28,12 @@ Installation
 ------------
 
 ```
-ssh into your block
-cd PATH_TO_NINJA_CLIENT/drivers
+ssh ubuntu@ninjablock.local
+```
+the password should be temppwd
+
+```
+cd /opt/ninja/drivers
 git clone https://github.com/federic0/x10_mochad_driver.git
 cd x10_mochad_driver
 npm install
