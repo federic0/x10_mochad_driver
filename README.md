@@ -3,9 +3,9 @@ X10 Driver for Ninjablocks
 
 this is an X10 driver for Ninja Blocks that works through mochad, a server that can receive TCP (netcat) commands and relay them to X10 via the powerline and RF, it requires a CM15A or a CM19A controller. First of all, apologies as this is my first code ever in javascript. It's completely beta. 
 
-![Widgets](https://www.dropbox.com/s/o3cuo7hh3ja460u/X10%20widget.png)
+![Widgets](https://www.dropbox.com/s/o3cuo7hh3ja460u/X10%20widget.png?dl=1)
 
-![Widgets](https://www.dropbox.com/s/ro8pr43qpsfoqiq/x10%20sensor.png)
+![Widgets](https://www.dropbox.com/s/ro8pr43qpsfoqiq/x10%20sensor.png?dl=1)
 
 Requirements:
 -------------
@@ -49,11 +49,11 @@ Then, on the beta dashboard you will need to go to the widget menu of your devic
  
 Sensors can be used to trigger rules using the developer mode generic rule components, by using the **Change** trigger and setting the **Change** widget field to *ON* or *OFF* for the desired sensor:
 
-![Widgets](https://https://www.dropbox.com/s/hg1a4rn7fvhjy4d/trigger%20rule%20based%20on%20x10%20sensor.png)
+![Widgets](https://https://www.dropbox.com/s/hg1a4rn7fvhjy4d/trigger%20rule%20based%20on%20x10%20sensor.png?dl=1)
 
 In order to actuate on an X10 device when a rule is triggered, use the **Send Value** widget, select the desired X10 device and fill the "Value" field with either *on* or *off*:
 
-![Widgets](https://www.dropbox.com/s/6wld4zrvtez4m4e/actuate%20on%20X10%20in%20rules.png)
+![Widgets](https://www.dropbox.com/s/6wld4zrvtez4m4e/actuate%20on%20X10%20in%20rules.png?dl=1)
 
 
 Benefits:
