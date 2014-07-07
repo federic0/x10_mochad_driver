@@ -3,9 +3,9 @@ X10 Driver for Ninjablocks
 
 this is an X10 driver for Ninja Blocks that works through mochad, a server that can receive TCP (netcat) commands and relay them to X10 via the powerline and RF, it requires a CM15A or a CM19A controller. First of all, apologies as this is my first code ever in javascript. It's completely beta. 
 
-![Widgets](https://dl-web.dropbox.com/get/shared/X10%20widget.png?w=AABhY8-r37OYOBSk-nzbmPE3qltnN4eh0qySiX0K2kXomQ)
+![Widgets](https://www.dropbox.com/s/o3cuo7hh3ja460u/X10%20widget.png)
 
-![Widgets](https://dl-web.dropbox.com/get/shared/x10%20sensor.png?w=AACBiBPTShQufwxwbOK_fA-DIj9fZF6w744GbCO5bMh1vw)
+![Widgets](https://www.dropbox.com/s/ro8pr43qpsfoqiq/x10%20sensor.png)
 
 Requirements:
 -------------
@@ -49,11 +49,11 @@ Then, on the beta dashboard you will need to go to the widget menu of your devic
  
 Sensors can be used to trigger rules using the developer mode generic rule components, by using the **Change** trigger and setting the **Change** widget field to *ON* or *OFF* for the desired sensor:
 
-![Widgets](https://dl-web.dropbox.com/get/shared/trigger%20rule%20based%20on%20x10%20sensor.png?w=AABNvHf3kSK4lm0IbOofrnoDzvm_yvUZfckMvzN5yT7ykw)
+![Widgets](https://https://www.dropbox.com/s/hg1a4rn7fvhjy4d/trigger%20rule%20based%20on%20x10%20sensor.png)
 
 In order to actuate on an X10 device when a rule is triggered, use the **Send Value** widget, select the desired X10 device and fill the "Value" field with either *on* or *off*:
 
-![Widgets](https://dl-web.dropbox.com/get/shared/actuate%20on%20X10%20in%20rules.png?w=AAANW5z88vuN2hX5p14e7d98z6DymgspbjBQQWF-W3XbbQ)
+![Widgets](https://www.dropbox.com/s/6wld4zrvtez4m4e/actuate%20on%20X10%20in%20rules.png)
 
 
 Benefits:
@@ -79,4 +79,6 @@ To do:
 
 I will not incorporate security devices since I do not own any and cannot perform testing.
 
-This code has been tested with mochad 0.1.15 and CM15A
+This code has been tested with mochad 0.1.15 and 0.1.16 and CM15A. It has also been tested with the CM15A attached to the Ninja Block (and mochad running on NB). 
+
+The code now checks for disconnections to the mochad server and attempts to reconnect.
