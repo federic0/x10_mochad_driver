@@ -49,7 +49,7 @@ Then, on the beta dashboard you will need to go to the widget menu of your devic
  
 Sensors can be used to trigger rules using the developer mode generic rule components, by using the **Change** trigger and setting the **Change** widget field to *ON* or *OFF* for the desired sensor:
 
-![Widgets](https://https://www.dropbox.com/s/hg1a4rn7fvhjy4d/trigger%20rule%20based%20on%20x10%20sensor.png?dl=1)
+![Widgets](https://www.dropbox.com/s/hg1a4rn7fvhjy4d/trigger%20rule%20based%20on%20x10%20sensor.png?dl=1)
 
 In order to actuate on an X10 device when a rule is triggered, use the **Send Value** widget, select the desired X10 device and fill the "Value" field with either *on* or *off*:
 
